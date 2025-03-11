@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 body{
-    font-family: "Kodchasan", sans-serif;
+    font-family: "Roboto Mono", monospace;
     padding: 0;
     margin: 0;
-    background-image: url(./image/image\ 2.png);
+    background-color: #181818;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -31,13 +31,14 @@ h1, p {
 }
 
 .header-text-logo{
-    font-family: "Vollkorn", serif;
-    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
     color: #f2f2f2;
 }
 
 .header-text{
-    margin-top: 20spx;
+    margin-top: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,78 +46,130 @@ h1, p {
 
 .header_list{
     display: flex;
-    font-family: "Raleway", sans-serif;
-    gap: 64px;
+    font-family: "Roboto Mono", monospace;
+    gap: 50px;
 }
 
 .nav-item{
-    font-size: 24px;
+    font-size: 40px;
     color: #fff;
     transition: 0.3s;
 }
 
 .nav-item:hover{
-    color: #FF8000;
+    color: #4400ff;
 }
 
 .container{
-    padding: 0px 100px;
+    padding: 0px 150px;
 }
 
 /* search box */
 
-.search-box {
-    display: flex;
-    align-items: center;
-    background: #eee;
-    border-radius: 20px;
-    padding: 0px 0px 0px 30px;
-}
-
-.search-box input {
-    border: none;
-    background: transparent;
-    outline: none;
+.lang-switch {
+    background: linear-gradient(to right, #5e2b89, #7D5BA6);
+    color: #FAFFFD;
     font-size: 16px;
-    padding: 5px;
-    width: 120px;
+    font-weight: bold;
+    padding: 3px 0px;
+    border: 2px solid #7D5BA6;
+    border-radius: 35px;
+    box-shadow: 0 0 100px #7D5BA6; /* Свечение */
 }
 
-.search-box button {
-    background: transparent;
+.lang-btn{
+    background: none;
     border: none;
+    color: white;
+    padding: 20px 20px;
     cursor: pointer;
-    padding: 1px 1px;
+    font-size: 16px;
+    transition: background 0.3s;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 20px;
 }
+
+.lang-btn.active {
+    background: #312442;
+}
+
+.lang-btn:hover {
+    background: #522d77;
+}
+
+
+
+
+/* header */
+
+.header-vniz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .header-title{
     margin-top: 200px;
 }
 
 .header-title h1{
-    font-size: 100px;
-    max-width: 1000px;
-    color: #FF8000;
+    font-size: 80px;
+    max-width: 900px;
+    font-weight: 300;
+    color: #fff;
 }
 
 .header-title p{
-    font-family: "Cinzel", serif;
-    font-size: 64px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 
-.header-btn{
-    margin-top: 60px;
-    margin-bottom: 70px;
+
+.header-img-container1{
+    display: flex;
+    max-width: 450px;
+    justify-content: space-between; /* Распределяем элементы */
+    gap: 70px; /* Отступ между картинками */
+    padding: 25px 0; /* Отступ сверху и снизу */
 }
 
-.header-button{
-    font-family: "Cinzel", serif;
-    padding: 10px 67px;
-    font-size: 50px;
-    width: 300px;
-    background-color: #FF8000;
-    border-radius: 50px;
-    border: none;
-    color: #000;
+.header-img-container2{
+    display: flex;
+    max-width: 450px;
+    justify-content: space-between; /* Распределяем элементы */
+    gap: 70px; /* Отступ между картинками */
 }
+
+
+/*  glou  */
+
+.glow {
+    position: absolute;
+    top: -450px; /* Поднимаем выше */
+    left: 50%;
+    width: 800px; /* Увеличиваем размер для плавности */
+    height: 800px;
+    background: radial-gradient(circle, #7D5BA6, rgba(0, 0, 0, 0) 80%); /* Градиентное свечение */
+    border-radius: 50%;
+    transform: translateX(-50%);
+    filter: blur(300px); /* Больше размытия для мягкости */
+    z-index: -1;
+    pointer-events: none; /* Чтобы не перекрывал клики */
+}
+
+.custom-button {
+    font-family: 'Inter', sans-serif; /* Шрифт Inter */
+    font-size: 25px; /* Размер шрифта 25px */
+    font-weight: 100; /* Regular (обычный) */
+    background: linear-gradient(to right, #7D5BA6, #5e2b89);
+    color: #FAFFFD;
+    font-size: 25px;
+    padding: 20px 30px;
+    border: 1px solid #7D5BA6;
+    border-radius: 2px;
+    box-shadow: 0 0 100px #7D5BA6; /* Свечение */
+  }

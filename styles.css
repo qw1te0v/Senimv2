@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    background-color: #1B2764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Instrument Sans", sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+.card{
+    text-align: center;
+
+}
+
+.card .avatar {
+    width: 220px;
+    height: 220px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 45px rgb(255, 255, 255);
+}
+
+.role {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.mentor {
+    color: #00bfff;
+}
+
+.jet{
+    color: #8595D6;
+    font-size: 32px;
+}
+
+.aqrys{
+    color: #F18BCC;
+    font-size: 32px;
+}
+
+.abylai{
+    color: #8595D6;
+    font-size: 32px;
+}
+
+.role-designer{
+    font-size: 27px;
+    color: #E5C9DB;
+}
+
+.role-designer img {
+    margin-right: 8px;
+}
+
+.role-engineer{
+    font-size: 27px;
+    color: #A163F5;
+}
+
+.role-engineer img {
+    margin-right: 8px; 
+}
+
+.cards1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.text{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.cards2{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.hacker{
+    
+}
+
+.aitmurat{
+    font-size: 32px;
+    color: #A163F5;
+}
+
+.kuka{
+    font-size: 32px;
+    color: #8595D6;
+}
+
+.cards3{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.agai{
+    font-size: 32px;
+    color: #fff;
+}
+
+.role-agai img {
+    margin-right: 8px; 
+}
+
+.role-agai{
+    font-size: 27px;
+    color: #fff;
+}
+
+.role-dev{
+    font-size: 27px;
+    color: #8595D6;
+}
+
+.role-dev img {
+    margin-right: 8px; 
+}
