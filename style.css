@@ -173,3 +173,74 @@ h1, p {
     border-radius: 2px;
     box-shadow: 0 0 100px #7D5BA6; /* Свечение */
   }
+
+@media screen and (max-width: 480px){
+    .header-text-logo{
+        font-size: 32px;
+    }
+
+    .header-text{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+
+    .header_list{
+        gap: 15px;
+    }    
+    
+    .nav-item{
+        font-size: 15px;
+    }
+
+    .container{
+        padding: 0px 20px;
+    }
+
+    .lang-switch {
+        font-size: 12px;
+        padding: 3px 0px;
+        display: flex; /* Добавляем flexbox */
+        justify-content: flex-end; /* Выравниваем элементы по правому краю */
+    }
+
+    .lang-btn{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .header-title{
+        margin-top: 50px;
+    }
+
+
+    .header-title h1{
+        font-size: 30px;
+        max-width: 200px;
+    }
+    
+    .header-title p{
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .header-img-container1, .header-img-container2 {
+        display: flex;
+        flex-direction: row; /* Убедимся, что элементы расположены в строку */
+        justify-content: space-between;
+        gap: 10px; 
+    }
+
+    .header-img-container1 img, .header-img-container2 img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .custom-button {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+}
