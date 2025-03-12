@@ -132,9 +132,9 @@ h1, p {
 .header-img-container1{
     display: flex;
     max-width: 450px;
-    justify-content: space-between; /* Распределяем элементы */
-    gap: 70px; /* Отступ между картинками */
-    padding: 25px 0; /* Отступ сверху и снизу */
+    justify-content: space-between;
+    gap: 70px; 
+    padding: 25px 0; 
 }
 
 .header-img-container2{
@@ -149,32 +149,31 @@ h1, p {
 
 .glow {
     position: absolute;
-    top: -450px; /* Поднимаем выше */
+    top: -450px;
     left: 50%;
-    width: 800px; /* Увеличиваем размер для плавности */
+    width: 800px; 
     height: 800px;
-    background: radial-gradient(circle, #7D5BA6, rgba(0, 0, 0, 0) 80%); /* Градиентное свечение */
+    background: radial-gradient(circle, #7D5BA6, rgba(0, 0, 0, 0) 80%); 
     border-radius: 50%;
     transform: translateX(-50%);
-    filter: blur(300px); /* Больше размытия для мягкости */
+    filter: blur(300px);
     z-index: -1;
-    pointer-events: none; /* Чтобы не перекрывал клики */
+    pointer-events: none; 
 }
 
 .custom-button {
-    font-family: 'Inter', sans-serif; /* Шрифт Inter */
-    font-size: 25px; /* Размер шрифта 25px */
-    font-weight: 100; /* Regular (обычный) */
+    font-size: 25px; 
+    font-weight: 100; 
     background: linear-gradient(to right, #7D5BA6, #5e2b89);
     color: #FAFFFD;
     font-size: 25px;
     padding: 20px 30px;
     border: 1px solid #7D5BA6;
     border-radius: 2px;
-    box-shadow: 0 0 100px #7D5BA6; /* Свечение */
+    box-shadow: 0 0 100px #7D5BA6; 
   }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     .header-text-logo{
         font-size: 32px;
     }
@@ -217,7 +216,7 @@ h1, p {
 
     .header-title h1{
         font-size: 30px;
-        max-width: 200px;
+        max-width: 400px;
     }
     
     .header-title p{
@@ -235,8 +234,8 @@ h1, p {
     }
 
     .header-img-container1 img, .header-img-container2 img {
-        width: 85px;
-        height: 85px;
+        width: 0px;
+        height: 0px;
     }
 
     .custom-button {
