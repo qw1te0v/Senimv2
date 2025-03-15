@@ -118,11 +118,22 @@ h1, p {
     margin-top: 200px;
 }
 
-.header-title h1{
-    font-size: 80px;
-    max-width: 900px;
+.header-title h1 {
+    font-size: 70px;
     font-weight: 300;
     color: #fff;
+    overflow: hidden; /* Обрезка текста */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    animation: typing 3s steps(38) alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 35ch; /* Количество символов */
+    }
+    to {
+        width: 0ch;
+    }
 }
 
 .header-title p{
@@ -379,8 +390,7 @@ h1, p {
 
 
     .header-title h1{
-        font-size: 30px;
-        max-width: 400px;
+        font-size: 25px;
     }
     
     .header-title p{
