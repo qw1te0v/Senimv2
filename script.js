@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.style.zoom = "67%";
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const kzBtn = document.getElementById("kz-btn");
     const ruBtn = document.getElementById("ru-btn");
