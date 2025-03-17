@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.zoom = "67%";
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const kzBtn = document.getElementById("kz-btn");
     const ruBtn = document.getElementById("ru-btn");
@@ -141,4 +142,14 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("more-btn").addEventListener("click", function(event) {
     event.preventDefault(); // Предотвращаем стандартный переход по ссылке
     document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("headerlist2").addEventListener("click", function(event) {
+    event.preventDefault(); // Предотвращаем стандартный переход по ссылке
+    document.querySelector(".about-logo").scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("headerlist1").addEventListener("click", function(event) {
+    event.preventDefault(); // Предотвращаем стандартный переход по ссылке
+    document.querySelector(".about-team-title").scrollIntoView({ behavior: "smooth" });
 });
