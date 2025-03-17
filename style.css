@@ -331,7 +331,14 @@ h1, p {
     justify-content: center;
 }
 
+.about-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .about-logo-text{
+    align-items: center;
     margin-top: 55px;
     font-size: 34px;
     font-weight: 500;
@@ -339,7 +346,7 @@ h1, p {
 }
 
 .about-logo-img{
-    gap: 25px;
+    gap: 250px;
 }
 
 /*about-team-card*/
