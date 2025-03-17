@@ -140,7 +140,7 @@ body {
     margin-right: 8px; 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 5000px){
     .card .avatar {
         width: 100px;
         height: 100px;   
