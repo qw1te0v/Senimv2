@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #1B2764;
+    background-color: #181818;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +27,10 @@ body {
 .card .avatar {
     width: 220px;
     height: 220px;
-    background-color: grey;
+    background-color: #7D5BA6;
     border-radius: 50%;
     margin: 0 auto 10px;
-    box-shadow: 0 0 45px rgb(255, 255, 255);
+    box-shadow: 0 0 50px #7D5BA6;
 }
 
 .role {
@@ -138,4 +138,32 @@ body {
 
 .role-dev img {
     margin-right: 8px; 
+}
+
+@media screen and (max-width: 500px){
+    .card .avatar {
+        width: 100px;
+        height: 100px;   
+    }
+
+    .card img{
+        display: none;
+    }
+
+    .card h3{
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .card p{
+        font-size: 15px;
+    }
+
+    .container{
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.card h1 p{
+    color: #fff;
 }
