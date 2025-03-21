@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardtext333 = document.getElementById("cardtext333");
 
     const aboutlootext = document.getElementById("aboutlootext");
+    const headerab = document.getElementById("headerab");
 
     let currentLang = localStorage.getItem("lang") || "kz";
     setLanguage(currentLang);
@@ -76,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             aboutlootext.textContent = "ДЕМЕУШІЛЕР";
+            headerab.textContent = "БІЗ ТУРАЛЫ";
         } 
         
         
@@ -106,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             aboutlootext.textContent = "СПОНСОРЫ";
+            headerab.textContent = "О НАС";
         }
 
         else if (lang === "en") {
@@ -135,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             aboutlootext.textContent = "SPONSORS";
+            headerab.textContent = "ABOUT US";
         }
     }
 });
@@ -152,4 +156,35 @@ document.getElementById("headerlist2").addEventListener("click", function(event)
 document.getElementById("headerlist1").addEventListener("click", function(event) {
     event.preventDefault(); // Предотвращаем стандартный переход по ссылке
     document.querySelector(".about-team-title").scrollIntoView({ behavior: "smooth" });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cardsContainer = document.querySelector('.otziv_cards');
+    const cards = document.querySelectorAll('.otziv_card');
+    const cardWidth = cards[0].offsetWidth + 20; // ширина карточки + gap
+    let currentIndex = 0;
+    let direction = 1;
+    const visibleCount = 3;
+
+    function slide() {
+        const offset = currentIndex * -(cardWidth);
+        cardsContainer.style.transform = `translateX(${offset}px)`;
+    }
+
+    function autoSlide() {
+        if (direction === 1 && currentIndex < cards.length - visibleCount) {
+            currentIndex++;
+        } else if (direction === 1 && currentIndex >= cards.length - visibleCount) {
+            direction = -1;
+            currentIndex--;
+        } else if (direction === -1 && currentIndex > 0) {
+            currentIndex--;
+        } else if (direction === -1 && currentIndex <= 0) {
+            direction = 1;
+            currentIndex++;
+        }
+        slide();
+    }
+
+    setInterval(autoSlide, 3000); // 3 секунды
 });
